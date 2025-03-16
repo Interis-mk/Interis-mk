@@ -1,12 +1,9 @@
-import Header from '../components/Header';
-import AnimatedComponent from "@/components/AnimatedComponent";
-
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
-  return (
-      <div>
-        <Header />
-        <AnimatedComponent />
-      </div>
-  );
+    return (
+        <div>
+            <Navbar />
+        </div>
+    );
 }
