@@ -2,6 +2,7 @@
 import React, { useState} from "react";
 import NavbarItems from "./NavbarItems";
 import { motion, AnimatePresence} from "framer-motion";
+import Header from "./Header";
 
 const Navbar = () => {
     const [isToggled, setToggle] = useState(false);
@@ -43,6 +44,7 @@ const Navbar = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
+            <Header />
         </>
     );
 };

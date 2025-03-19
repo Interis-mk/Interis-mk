@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 const Navbar = ({ isToggled }: { isToggled: boolean }) => {
-    const items = ["Home", "Products", "Services", "About"];
+    const items = ["Home", "projects", "About", "Contact"];
 
     const navList = {
         visible: {
