@@ -1,29 +1,29 @@
-const logotext = "JOHN";
+const logotext = "KEVIN";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Kevin Hamelink",
+    description: "I’m Kevin Hamelink, a Game developer _ Full stack devloper,currently not working nor searching",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Kevin Hamelink",
     animated: {
         first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        second: "I develop awesome games",
+        third: "I code cool websites",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "I’m Kevin Hamelink, a Game developer _ Full stack developer, currently not working nor searching",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
 const dataabout = {
     title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    aboutme: "My name is Kevin Hamelink, a 19-year-old creative problem solver from Koudekerke with a passion for space exploration, aerospace, gaming, and cars. Whether I'm playing a game or solving a software problem, I don't rest until I find the solution. That's why I've chosen a career as a software developer. My dream is to be able to contribute to one (or more) of these sectors, but I'd also love to discover another sector..",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
+    jobtitle: "Designer of week",
+    where: "YAdfi",
+    date: "2020",
+},
     {
         jobtitle: "Designer of week",
         where: "Jamalya",
@@ -36,47 +36,69 @@ const worktimeline = [{
     },
 ];
 
-const skills = [{
-        name: "Python",
-        value: 90,
-    },
-    {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
+const skills = [
     {
         name: "React",
         value: 60,
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "C#",
+        value: 90,
+    },
+    {
+        name: "C++",
+        value: 80,
+    },
+    {
+        name: "Java",
+        value: 90,
+    },
+    {
+        name: "HTML",
+        value: 90,
+    },
+    {
+        name: "CSS",
+        value: 90,
+    },
+    {
+        name: "JS",
+        value: 80,
+    },
+    {
+        name: "PHP",
+        value: 70,
+    },
+    {
+        name: "Python",
+        value: 60,
+    },
+    {
+        name: "MySQL",
+        value: 80,
     },
 ];
 
-const services = [{
+const services = [
+    {
         title: "UI & UX Design",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
     },
     {
-        title: "Mobile Apps",
+        title: "Games",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
     },
     {
-        title: "Wordpress Design",
+        title: "Web development",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
     },
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+    img: "https://picsum.photos/400/?grayscale",
+    description: "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+},
     {
         img: "https://picsum.photos/400/800/?grayscale",
         description: "The wisdom of life consists in the elimination of non-essentials.",
@@ -136,8 +158,7 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
+    YOUR_EMAIL: "kevinhamelink05@gmail.com",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
@@ -147,10 +168,10 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
+    github: "https://github.com/Interis-mk",
     facebook: "https://facebook.com",
     linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+
 };
 export {
     meta,
