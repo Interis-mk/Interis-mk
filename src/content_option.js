@@ -11,7 +11,7 @@ const introdata = {
         second: "I develop awesome games",
         third: "I code cool websites",
     },
-    description: "I’m Kevin Hamelink, a Game developer _ Full stack developer, currently not working nor searching",
+    description: "I’m Kevin Hamelink, a Game developer _ Self taught Full stack developer, currently not working nor searching",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
