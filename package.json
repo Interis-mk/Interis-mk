@@ -1,5 +1,6 @@
 {
     "name": "react-portfolio",
+    "homepage": "https://interis-mk.github.io/Interis-mk",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
