@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.css": "/Interis-mk/static/css/main.9145f646.css",
+    "main.js": "/Interis-mk/static/js/main.3752036d.js",
+    "index.html": "/Interis-mk/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.9145f646.css",
+    "static/js/main.3752036d.js"
+  ]
+}
