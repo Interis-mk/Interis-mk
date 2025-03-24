@@ -20,34 +20,30 @@ const dataabout = {
     aboutme: "My name is Kevin Hamelink, a 20-year-old creative problem solver from Koudekerke with a passion for space exploration, aerospace, gaming, and cars. Whether I'm playing a game or solving a software problem, I don't rest until I find the solution. That's why I've chosen a career as a software developer. My dream is to be able to contribute to one (or more) of these sectors, but I'd also love to discover another sector..",
 };
 const worktimeline = [{
-    jobtitle: "Designer of week",
-    where: "YAdfi",
-    date: "2020",
+    jobtitle: "Designer of 3D katanas Neon Origins",
+    where: "Mediacollege Amsterdam",
+    date: "2025",
 },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Game Slice Hollow knight",
+        where: "Mediacollege Amsterdam",
+        date: "2025",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Student Fullstack developer",
+        where: "Scalda edisonweg",
+        date: "2021-2023",
     },
 ];
 
 const skills = [
-    {
-        name: "React",
-        value: 60,
-    },
     {
         name: "C#",
         value: 90,
     },
     {
         name: "C++",
-        value: 80,
+        value: 50,
     },
     {
         name: "Java",
@@ -74,6 +70,10 @@ const skills = [
         value: 60,
     },
     {
+        name: "React",
+        value: 75,
+    },
+    {
         name: "MySQL",
         value: 80,
     },
@@ -81,16 +81,16 @@ const skills = [
 
 const services = [
     {
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Game Development",
+        description: "I develop games using Unity, C# and C++ / unreal blueprints and more",
     },
     {
-        title: "Games",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "3D modelling",
+        description: "I used to 3D modelling software like blender to create 3D models for my games",
     },
     {
         title: "Web development",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "I worked on a webapp during my college on scalda, Utilising Mysql, Java, Struts2 framework. and more",
     },
 ];
 
