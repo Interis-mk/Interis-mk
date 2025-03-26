@@ -86,7 +86,7 @@ const services = [
     },
     {
         title: "3D modelling",
-        description: "I used to 3D modelling software like blender to create 3D models for my games",
+        description: "I used to 3D modelling software like blender to create 3D models for my games, and texture them in substance painter 3D",
     },
     {
         title: "Web development",
