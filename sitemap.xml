@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://interis-mk.github.io/Interis-mk/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://interis-mk.github.io/Interis-mk/about</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://interis-mk.github.io/Interis-mk/contact</loc>
+        <changefreq>never</changefreq>
+        <priority>0.2</priority>
+    </url>
+    <url>
+        <loc>https://interis-mk.github.io/Interis-mk/projects</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://interis-mk.github.io/Interis-mk/skills</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+</urlset>
