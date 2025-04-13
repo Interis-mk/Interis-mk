@@ -1,7 +1,7 @@
 const logotext = "KEVIN";
 const meta = {
     title: "Kevin Hamelink",
-    description: "I’m Kevin Hamelink, a Game developer _ Full stack devloper,currently not working nor searching",
+    description: "I’m Kevin Hamelink, a Game developer _ Self taught Fullstack devloper,currently not working nor searching",
 };
 
 const introdata = {
@@ -11,7 +11,7 @@ const introdata = {
         second: "I develop awesome games",
         third: "I code cool websites",
     },
-    description: "I’m Kevin Hamelink, a Game developer _ Self taught Full stack developer, currently not working nor searching",
+    description: "I’m Kevin Hamelink, a Game developer _ Self taught Fullstack developer, currently not working nor searching",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
@@ -19,11 +19,12 @@ const dataabout = {
     title: "abit about my self",
     aboutme: "My name is Kevin Hamelink, a 20-year-old creative problem solver from Koudekerke with a passion for space exploration, aerospace, gaming, and cars. Whether I'm playing a game or solving a software problem, I don't rest until I find the solution. That's why I've chosen a career as a software developer. My dream is to be able to contribute to one (or more) of these sectors, but I'd also love to discover another sector..",
 };
-const worktimeline = [{
+const worktimeline = [
+    {
     jobtitle: "Designer of 3D katanas Neon Origins",
     where: "Mediacollege Amsterdam",
     date: "2025",
-},
+    },
     {
         jobtitle: "Game Slice Hollow knight",
         where: "Mediacollege Amsterdam",
@@ -111,21 +112,11 @@ const dataportfolio = [{
     },
 ];
 
-const contactConfig = {
-    YOUR_EMAIL: "kevinhamelink05@gmail.com",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
-};
-
 const socialprofils = {
     github: "https://github.com/Interis-mk",
     facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-
+    linkedin: "https://www.linkedin.com/in/kevin-hamelink/",
+    discord: "https://discordapp.com/users/394508922091995137",
 };
 export {
     meta,
@@ -135,7 +126,6 @@ export {
     skills,
     services,
     introdata,
-    contactConfig,
     socialprofils,
     logotext,
 };

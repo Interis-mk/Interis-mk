@@ -24,3 +24,4 @@ yarn-error.log*
 /.idea/
 .env
 /server/config.env
+/src/emailjs_Config.js

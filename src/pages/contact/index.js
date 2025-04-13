@@ -4,7 +4,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
-import { contactConfig } from "../../content_option";
+import { contactConfig } from "../../emailjs_Config";
 
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({
