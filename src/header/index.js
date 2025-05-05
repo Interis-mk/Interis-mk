@@ -25,10 +25,8 @@ const Headermain = () => {
                         <button className="menu__button  nav_ac" onClick={handleToggle}>
                             {!isActive ? <VscClose/> : <VscGrabber/>}
                         </button>
-
                     </div>
                 </div>
-
                 <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
                     <div className="bg__menu h-100">
                         <div className="menu__wrapper">
@@ -65,7 +63,6 @@ const Headermain = () => {
             <div className="br-bottom"></div>
             <div className="br-left"></div>
             <div className="br-right"></div>
-
         </>
     );
 };
