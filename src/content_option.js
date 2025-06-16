@@ -9,7 +9,7 @@ const introdata = {
     animated: {
         first: "I love coding",
         second: "I develop awesome games",
-        third: "I Develeop sick VR games",
+        third: "I Develop sick VR games",
         fourth: "I code cool websites",
     },
     description: "I’m Kevin Hamelink, a Game developer _ Self taught Fullstack developer, currently not working nor searching",
