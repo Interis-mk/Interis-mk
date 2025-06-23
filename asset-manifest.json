@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Interis-mk/static/css/main.a6af8929.css",
-    "main.js": "/Interis-mk/static/js/main.c304fe7e.js",
+    "main.js": "/Interis-mk/static/js/main.b9dffa43.js",
     "index.html": "/Interis-mk/index.html",
     "main.a6af8929.css.map": "/Interis-mk/static/css/main.a6af8929.css.map",
-    "main.c304fe7e.js.map": "/Interis-mk/static/js/main.c304fe7e.js.map"
+    "main.b9dffa43.js.map": "/Interis-mk/static/js/main.b9dffa43.js.map"
   },
   "entrypoints": [
     "static/css/main.a6af8929.css",
-    "static/js/main.c304fe7e.js"
+    "static/js/main.b9dffa43.js"
   ]
 }
