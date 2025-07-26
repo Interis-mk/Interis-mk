@@ -1,7 +1,7 @@
 const logotext = "KEVIN";
 const meta = {
     title: "Kevin Hamelink",
-    description: "I’m Kevin Hamelink, a Game developer _ Self taught Fullstack devloper,currently not working nor searching",
+    description: "I’m Kevin Hamelink, a Game developer _ Self taught Fullstack devloper,currently not working BUT searching",
 };
 
 const introdata = {
