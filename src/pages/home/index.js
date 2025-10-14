@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./style.css";
 import {Helmet, HelmetProvider} from "react-helmet-async";
 import Typewriter from "typewriter-effect";
@@ -71,7 +71,7 @@ if (new URLSearchParams(window.location.search).get("clear")) {
         far = camera.position.z + 0.5;
 
         scene = new t.Scene();
-        scene.background = new t.Color(0.0);
+        scene.background = new t.Color("black");
         scene.add(camera);
 
         renderer = new t.WebGLRenderer({antialias: true, depthBuffer: true});
@@ -141,7 +141,6 @@ if (new URLSearchParams(window.location.search).get("clear")) {
 
         windowManager.update();
 
-
         // calculate the new position based on the delta between current offset and new offset times a falloff value (to create the nice smoothing effect)
         let falloff = .05;
         sceneOffset.x = sceneOffset.x + ((sceneOffsetTarget.x - sceneOffset.x) * falloff);
@@ -153,7 +152,6 @@ if (new URLSearchParams(window.location.search).get("clear")) {
 
         let wins = windowManager.getWindows();
 
-
         // loop through all our cubes and update their positions based on current window positions
         for (let i = 0; i < cubes.length; i++) {
             let cube = cubes[i];
@@ -164,8 +162,8 @@ if (new URLSearchParams(window.location.search).get("clear")) {
 
             cube.position.x = cube.position.x + (posTarget.x - cube.position.x) * falloff;
             cube.position.y = cube.position.y + (posTarget.y - cube.position.y) * falloff;
-            cube.rotation.x = _t * .5;
-            cube.rotation.y = _t * .3;
+            cube.rotation.x = _t * .10;
+            cube.rotation.y = _t * .90;
         }
 
         renderer.render(scene, camera);

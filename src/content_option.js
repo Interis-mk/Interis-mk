@@ -17,7 +17,7 @@ const introdata = {
 };
 
 const dataabout = {
-    title: "abit about my self",
+    title: "a bit about my self",
     aboutme: "My name is Kevin Hamelink, a 20-year-old creative problem solver from Koudekerke with a passion for space exploration, aerospace, gaming, and cars. Whether I'm playing a game or solving a software problem, I don't rest until I find the solution. That's why I've chosen a career as a software developer. My dream is to be able to contribute to one (or more) of these sectors, but I'd also love to discover another sector..",
 };
 const worktimeline = [
@@ -45,44 +45,24 @@ const worktimeline = [
 
 const skills = [
     {
-        name: "C#",
-        value: 90,
+        title: "C#",
+        description: "my Main coding language, I use this for Unity/Game development mainly.",
     },
     {
-        name: "C++",
-        value: 50,
+        title: "Java",
+        description: "my second coding language that i know the most of, I mainly use this for minecraft modding, or Web application building.",
     },
     {
-        name: "Java",
-        value: 90,
+        title: "SQL",
+        description: "I have allot of experience making company scale databases.",
     },
     {
-        name: "HTML",
-        value: 90,
+        title: "php",
+        description: "While i have experience working with php. I can't say I entirely enjoy working with it.",
     },
     {
-        name: "CSS",
-        value: 90,
-    },
-    {
-        name: "JS",
-        value: 80,
-    },
-    {
-        name: "PHP",
-        value: 70,
-    },
-    {
-        name: "Python",
-        value: 60,
-    },
-    {
-        name: "React",
-        value: 75,
-    },
-    {
-        name: "MySQL",
-        value: 80,
+        title: "React",
+        description: "My main go to framework that i built most of my websites/applications with. I enjoy working with this framework and do fun things with it.",
     },
 ];
 
