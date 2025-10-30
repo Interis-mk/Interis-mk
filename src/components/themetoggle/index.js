@@ -5,7 +5,10 @@ import {WiMoonAltWaningCrescent4} from "react-icons/wi";
 const Themetoggle = () => {
     const [theme, settheme] = useState(localStorage.getItem("theme"));
     const themetoggle = () => {
-        settheme(theme === "dark" ? "light" : "dark");
+        const newTheme = theme === "dark" ? "light" : "dark";
+        settheme(newTheme);
+        // Dispatch a custom event so other components can react
+        window.dispatchEvent(new CustomEvent('themeChanged', { detail: { theme: newTheme } }));
     };
     useEffect(() => {
         document.documentElement.setAttribute('data-theme', theme);

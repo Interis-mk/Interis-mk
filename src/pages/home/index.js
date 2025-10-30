@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "./style.css";
 import {Helmet, HelmetProvider} from "react-helmet-async";
 import Typewriter from "typewriter-effect";
@@ -71,7 +71,20 @@ if (new URLSearchParams(window.location.search).get("clear")) {
         far = camera.position.z + 0.5;
 
         scene = new t.Scene();
-        scene.background = new t.Color("black");
+        // Read theme from localStorage (set by the theme toggle component) and pick a background color
+        const setSceneBackground = (theme) => {
+            if (theme === 'dark') {
+                scene.background = new t.Color(0x0d0d0d);
+            } else {
+                scene.background = new t.Color(0xffffff);
+            }
+        };
+        const currentTheme = (typeof window !== 'undefined') ? (localStorage.getItem('theme') || 'light') : 'light';
+        setSceneBackground(currentTheme);
+        // Listen for theme changes
+        window.addEventListener('themeChanged', (e) => {
+            setSceneBackground(e.detail.theme);
+        });
         scene.add(camera);
 
         renderer = new t.WebGLRenderer({antialias: true, depthBuffer: true});
