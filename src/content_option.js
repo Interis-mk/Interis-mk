@@ -64,6 +64,10 @@ const skills = [
         title: "React",
         description: "My main go to framework that i built most of my websites/applications with. I enjoy working with this framework and do fun things with it.",
     },
+    {
+        title: "javascript",
+        description: "My main coding language for Web development, this website is also made with Javascript mainly alongside react."
+    }
 ];
 
 const services = [
