@@ -101,7 +101,7 @@ const dataportfolio = [{
         link: "https://github.com/Interis-mk/TowerDefence",
     },
     {
-      img: "public/opentorendag.png",
+      img: "https://github.com/Interis-mk/Interis-mk/blob/master/public/opentorendag.png?raw=true",
       description: "Open toren dag VR Future and Past Amsterdam. This project has been made during my study at Software developer @ " +
           "Mediacollege Amsterdam and is being showcased every year with new updates and features to keep it fresh.",
         link: "https://github.com/temporarily-permanent/open-toren-dag"
