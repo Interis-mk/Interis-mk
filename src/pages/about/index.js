@@ -40,19 +40,28 @@ export const About = () => {
             <h3 className="color_sec py-4">Work Timeline</h3>
           </Col>
           <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+            <div className="table-responsive">
+              <table className="table caption-top">
+                <thead>
+                  <tr>
+                    <th>Role</th>
+                    <th>Where</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {worktimeline.map((data, i) => {
+                    return (
+                      <tr key={i}>
+                        <th scope="row">{data.jobtitle}</th>
+                        <td>{data.where}</td>
+                        <td>{data.date}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
           </Col>
         </Row>
         <Row className="sec_sp">
