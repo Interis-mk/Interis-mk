@@ -1,14 +1,16 @@
 .po_items_ho {
-    column-width: 15em;
-    -moz-column-width: 15em;
-    -webkit-column-width: 15em;
-    column-gap: 4rem;
-    -moz-column-gap: 4rem;
-    -webkit-column-gap: 4rem;
+    /* Gebruik CSS Grid voor consistente rijen/kolommen
+       Default: 3 kolommen voor grote schermen
+       Medium: 2 kolommen
+       Mobile: 1 kolom */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 per rij op large */
+    gap: 2rem; /* afstand tussen items (vervangt column-gap) */
+    align-items: start;
 }
 
 .po_item {
-    display: inline-block;
+    display: block; /* grid item: block zorgt voor correcte sizing */
     width: 100%;
     text-align: center;
     margin: 0.5rem auto;
@@ -17,39 +19,38 @@
     padding: 6px;
     border: 1px solid var(--secondary-color);
     transition: 0.3s ease;
-    font-size: 0;
-    min-height: 300px;
+    font-size: 0; /* keep 0 to avoid inline-block gaps inside column layout */
+    min-height: 300px; /* existing fallback */
+    height: 300px; /* fixed height so all blocks are same size */
+    overflow: hidden; /* ensure image/overlay stays inside the block */
 }
 
 .po_item img {
-    max-width: 100%;
+    /* ensure image fills the block and keeps aspect by cropping */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .po_item .content {
+    /* simplified overlay that fills the block with padding */
     position: absolute;
-    height: 0;
-    width: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
     background: var(--overlay-color);
     z-index: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    width: 100%;
     transition: 0.3s ease-in-out;
     opacity: 0;
-    border: 1px solid black;
-}
-
-.po_item .content {
-    opacity: 0;
-    transition-delay: 1s;
-    transition: 0.3s ease;
-    font-size: 20px;
+    color: var(--secondary-color);
+    border: 1px solid rgba(0,0,0,0.2);
+    font-size: 20px; /* explicit font size because parent has font-size:0 */
 }
 
 .po_item:hover {
@@ -57,15 +58,9 @@
 }
 
 .po_item:hover .content {
-    height: calc(100% - 30px);
-    width: calc(100% - 30px);
     opacity: 1;
 }
 
-.po_item:hover .content {
-    opacity: 1;
-    color: var(--secondary-color);
-}
 
 .po_item .content a {
     background: var(--bg-color);
@@ -77,4 +72,21 @@
 
 .po_item .content a:hover {
     text-decoration: none;
+}
+
+/* Responsive breakpoints: 2 kolommen op medium schermen, 1 kolom op mobiel */
+@media (max-width: 1024px) {
+    .po_items_ho {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .po_items_ho {
+        grid-template-columns: 1fr; /* 1 per rij op mobiele apparaten */
+    }
+    .po_item {
+        height: 220px; /* optioneel: kleinere hoogte op mobiel */
+        min-height: 220px;
+    }
 }

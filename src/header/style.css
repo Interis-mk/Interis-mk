@@ -27,7 +27,7 @@
     border: unset;
     background: var(--primary-color);
     font-size: 1.25rem;
-    font-family: Marcellus;
+    font-family: Marcellus, serif;
     color: var(--text-color-2);
     line-height: 2;
     height: 50px;
