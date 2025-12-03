@@ -106,11 +106,16 @@ const dataportfolio = [{
           "Mediacollege Amsterdam and is being showcased every year with new updates and features to keep it fresh.",
         link: "https://github.com/temporarily-permanent/open-toren-dag"
     },
+    {
+      img: "",
+      description: "Gamejam: Old vs Joung, this is a gamejam that got held at Mediacollege Amsterdam and won 1st place. the theme was 'old vs young'. Made in Unity 6 " +
+          "with a small developer team.",
+      link: "https://github.com/Yatii2/Gamejam-oud-en-jong",
+    },
 ];
 
 const socialprofils = {
     github: "https://github.com/Interis-mk",
-    facebook: "https://facebook.com",
     linkedin: "https://www.linkedin.com/in/kevin-hamelink/",
     discord: "https://discordapp.com/users/394508922091995137",
 };
