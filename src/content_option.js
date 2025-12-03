@@ -67,6 +67,10 @@ const skills = [
     {
         title: "javascript",
         description: "My main coding language for Web development, this website is also made with Javascript mainly alongside react."
+    },
+    {
+        title: "Unity",
+        description: "my go to Engine to make games with."
     }
 ];
 
@@ -107,7 +111,7 @@ const dataportfolio = [{
         link: "https://github.com/temporarily-permanent/open-toren-dag"
     },
     {
-      img: "",
+      img: "https://github.com/Interis-mk/Interis-mk/blob/master/public/OldVsYoung.png?raw=true",
       description: "Gamejam: Old vs Joung, this is a gamejam that got held at Mediacollege Amsterdam and won 1st place. the theme was 'old vs young'. Made in Unity 6 " +
           "with a small developer team.",
       link: "https://github.com/Yatii2/Gamejam-oud-en-jong",

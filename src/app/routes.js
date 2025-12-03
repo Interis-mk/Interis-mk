@@ -19,7 +19,7 @@ const AnimatedRoutes = withRouter(({location}) => (
             classNames="page"
             unmountOnExit
         >
-            <Routes location={location}>
+            <Routes location={location} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
                 <Route exact path="/" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
                 <Route path="/portfolio" element={<Portfolio/>}/>
