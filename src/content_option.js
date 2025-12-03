@@ -1,4 +1,4 @@
-const logotext = "KEVIN";
+const logotext = "KEVIN_HAMELINK";
 const meta = {
     title: "Kevin Hamelink",
     description: "I’m Kevin Hamelink, a Game developer _ Self taught Fullstack devloper,currently not working BUT searching",
@@ -22,14 +22,24 @@ const dataabout = {
 };
 const worktimeline = [
     {
-      jobtitle: "Open Toren dag VR Future and Past Amsterdam",
+      jobtitle: "Lead game developer for Bunny's Paradise unity game",
+      where: "Mediacollege Amsterdam",
+      date: "2025-2026",
+    },
+    {
+        jobtitle: "Lead Game developer gamejam 'Old vs Young'",
         where: "Mediacollege Amsterdam",
         date: "2025",
     },
     {
-    jobtitle: "Designer of 3D katanas Neon Origins",
-    where: "Mediacollege Amsterdam",
-    date: "2025",
+        jobtitle: "Open Toren dag VR Future and Past Amsterdam",
+        where: "Mediacollege Amsterdam",
+        date: "2025",
+    },
+    {
+        jobtitle: "Designer of 3D katanas Neon Origins",
+        where: "Mediacollege Amsterdam",
+        date: "2025",
     },
     {
         jobtitle: "Game Slice Hollow knight",
@@ -93,7 +103,7 @@ const dataportfolio = [{
     img: "https://i.pinimg.com/474x/3a/63/54/3a63544cab1e6926dcb7f02c384be94d.jpg",
     description: "A game slice of Hollow Knight, developed using Unity, C# and my team.",
     link: "https://github.com/Interis-mk/Game-Sclice",
-    },
+},
     {
         img: "https://github.com/Interis-mk/delphinitysd-pokemon-students-1ae0965c0c32-main/blob/main/image.png?raw=true",
         description: "This game has been made during my study at Software developer @ Scalda It's a 'simple' console pokemon game made in java.",
@@ -105,16 +115,16 @@ const dataportfolio = [{
         link: "https://github.com/Interis-mk/TowerDefence",
     },
     {
-      img: "https://github.com/Interis-mk/Interis-mk/blob/master/public/opentorendag.png?raw=true",
-      description: "Open toren dag VR Future and Past Amsterdam. This project has been made during my study at Software developer @ " +
-          "Mediacollege Amsterdam and is being showcased every year with new updates and features to keep it fresh.",
+        img: "https://github.com/Interis-mk/Interis-mk/blob/master/public/opentorendag.png?raw=true",
+        description: "Open toren dag VR Future and Past Amsterdam. This project has been made during my study at Software developer @ " +
+            "Mediacollege Amsterdam and is being showcased every year with new updates and features to keep it fresh.",
         link: "https://github.com/temporarily-permanent/open-toren-dag"
     },
     {
-      img: "https://github.com/Interis-mk/Interis-mk/blob/master/public/OldVsYoung.png?raw=true",
-      description: "Gamejam: Old vs Joung, this is a gamejam that got held at Mediacollege Amsterdam and won 1st place. the theme was 'old vs young'. Made in Unity 6 " +
-          "with a small developer team.",
-      link: "https://github.com/Yatii2/Gamejam-oud-en-jong",
+        img: "https://github.com/Interis-mk/Interis-mk/blob/master/public/OldVsYoung.png?raw=true",
+        description: "Gamejam: Old vs Joung, this is a gamejam that got held at Mediacollege Amsterdam and won 1st place. the theme was 'old vs young'. Made in Unity 6 " +
+            "with a small developer team.",
+        link: "https://github.com/Yatii2/Gamejam-oud-en-jong",
     },
 ];
 
