@@ -2,9 +2,145 @@
     margin-bottom: calc(3rem + 5.128vw)
 }
 
+/* about page photo and text improvements */
+.about-photo-wrap {
+    max-width: 320px;
+    margin-bottom: 1rem;
+}
+
+.about-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    border: 3px solid rgba(0,0,0,0.6);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* ensure section text is readable */
+.about-text {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--text-color);
+}
+
+/* override color_sec locally so heading near photo is readable */
+.about-left .color_sec {
+    color: var(--bg-color);
+    background: var(--secondary-color);
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
 .table td,
 .table th {
     color: var(--text-color);
+    /* ensure no white background on any table cell (override bootstrap) */
+    background-color: transparent !important;
+}
+
+.table {
+    background: var(--table-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* Force-remove Bootstrap's white backgrounds inside tables by using very specific selectors */
+.table {
+    background-color: var(--table-bg) !important;
+}
+
+/* Even stronger: match Bootstrap's child selector and scope to the About page container to ensure no white rows */
+.About-header .table > tbody > tr > td,
+.About-header .table > tbody > tr > th,
+.About-header .table > tbody > tr {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+}
+
+/* Match Bootstrap's internal selector to override any cascade coming from bootstrap core */
+.About-header .table > :not(caption) > * > * {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+}
+
+/* Also explicitly override striped/hover and any .bg-* helpers that might force white */
+.About-header .table.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+}
+
+.About-header .table.table-hover > tbody > tr:hover > * {
+    background-color: rgba(255,255,255,0.02) !important;
+}
+
+.About-header .table .bg-white,
+.About-header .table .bg-light,
+.About-header .table .bg-transparent {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+}
+
+/* Extra: remove any remaining white blocks and normalize borders to a subtle dark line */
+.About-header .table > tbody {
+    background-color: transparent !important;
+}
+
+.About-header .table td,
+.About-header .table th {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    border-color: rgba(255,255,255,0.06) !important; /* subtle separators */
+}
+
+.About-header .table.table-bordered td,
+.About-header .table.table-bordered th {
+    border: 1px solid rgba(255,255,255,0.06) !important;
+}
+
+/* Ensure the header stays dark with accent text */
+.About-header .table thead th {
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+}
+
+.table thead th {
+    font-weight: 700;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.table tbody td {
+    padding: 12px 16px;
+    vertical-align: middle;
+    color: var(--text-color);
+    /* make cells transparent so the table's dark background shows through (remove white) */
+    background-color: transparent !important;
+}
+
+.table tbody tr {
+    /* ensure rows don't show a white background (override bootstrap defaults) */
+    background-color: transparent !important;
+}
+
+.table tbody tr:nth-child(odd) {
+    /* keep subtle striping but dark — use a tiny tint over the table-bg if desired */
+    background-color: rgba(255,255,255,0.00) !important;
+}
+
+.table tbody tr:hover {
+    /* subtle lighter-on-hover (still dark) */
+    background-color: rgba(255,255,255,0.02) !important;
+}
+
+/* Ensure table fits on small screens */
+.table-responsive {
+    overflow-x: auto;
 }
 
 .t_border {
@@ -12,37 +148,50 @@
 }
 
 .progress-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
-    margin: 15px 0 20px;
+    margin: 8px 0 10px;
     font-family: 'Raleway';
 }
 
+.skill-row {
+    margin-bottom: 12px;
+}
+
 .progress {
-    height: 5px;
+    height: 6px;
     background: var(--secondary-color);
-    border-radius: 0;
+    border-radius: 4px;
     box-shadow: none;
-    margin-bottom: 30px;
-    overflow: visible;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .progress .progress-bar {
     position: relative;
     background: var(--text-color);
-    animation: animate-positive 2s;
+    animation: animate-positive 1.5s;
     overflow: visible;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .progress .progress-value {
     position: absolute;
-    top: -30px;
-    right: 8px;
-    font-size: 17px;
+    top: -24px;
+    right: 6px;
+    font-size: 14px;
     font-weight: bold;
     font-style: italic;
     color: var(--text-color);
+}
+
+.skill-years,
+.service-years {
+    background: rgba(255,255,255,0.08);
+    color: var(--text-color);
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
 }
 
 @-webkit-keyframes animate-positive {
@@ -62,12 +211,18 @@
 }
 
 .service__title {
-    padding: 8px 0;
+    padding: 4px 0;
     border-bottom: solid 2px var(--secondary-color);
+    font-size: 16px;
 }
 
 .service-section .service-category-title {
     padding-bottom: 4px;
+}
+
+.service_desc {
+    margin-top: 6px;
+    font-size: 0.95rem;
 }
 
 
