@@ -12,7 +12,7 @@ const introdata = {
         third: "I Develop sick VR games",
         fourth: "I code cool websites",
     },
-    description: "I’m Kevin Hamelink, a Game developer _ Self taught Fullstack developer, currently not working nor searching",
+    description: "I’m Kevin Hamelink, a Game developer _ Self taught Fullstack developer, currently working at Mediacollege Amsterdam as Intern Developer",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
