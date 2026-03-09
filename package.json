@@ -4,6 +4,7 @@
     "version": "0.1.0",
     "license": "MIT",
     "private": true,
+    "type": "module",
     "dependencies": {
         "bootstrap": "^5.2.3",
         "dotenv": "^16.4.7",
@@ -16,39 +17,22 @@
         "react-helmet-async": "^1.0.7",
         "react-icons": "^4.1.0",
         "react-router-dom": "^6.6.2",
-        "react-scripts": "^0.0.0",
         "react-transition-group": "^4.4.5",
         "three": "^0.176.0",
         "typewriter-effect": "^2.18.2",
         "web-vitals": "^3.1.1"
     },
     "devDependencies": {
-        "form-data": "^4.0.4"
+        "@vitejs/plugin-react": "^4.7.0",
+        "form-data": "^4.0.4",
+        "vite": "^5.4.21"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
+        "dev": "vite",
+        "start": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
     }
 }
