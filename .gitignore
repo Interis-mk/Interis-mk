@@ -25,3 +25,4 @@ yarn-error.log*
 .env
 /server/config.env
 /src/emailjs_Config.js
+/.expo/settings.json
