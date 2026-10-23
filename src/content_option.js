@@ -13,18 +13,30 @@ const introdata = {
         fourth: "I code cool websites",
     },
     description: "I’m Kevin Hamelink, a Game developer _ Self taught Fullstack developer, currently working at Mediacollege Amsterdam as Intern Developer",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    your_img_url: "https://media.licdn.com/dms/image/v2/D4E03AQETlpnR9H_Jbw/profile-displayphoto-scale_200_200/B4EZqb5DqGKgAY-/0/1763552018921?e=1794441600&v=beta&t=D9yapqIOkE2XQLK_XxOMofHQWyuMaYcpwPzXTaHLYnI",
 };
 
 const dataabout = {
     title: "a bit about my self",
-    aboutme: "My name is Kevin Hamelink, a 20-year-old creative problem solver from Koudekerke with a passion for space exploration, aerospace, gaming, and cars. Whether I'm playing a game or solving a software problem, I don't rest until I find the solution. That's why I've chosen a career as a software developer. My dream is to be able to contribute to one (or more) of these sectors, but I'd also love to discover another sector..",
+    aboutme: "My name is Kevin Hamelink, a 21-year-old creative problem solver from Koudekerke with a passion for space exploration," +
+        " aerospace, gaming, and cars. Whether I'm playing a game or developing code, I don't rest until I find the solution. That's why I've chosen a career as " +
+        "a software developer. My dream is to be able to contribute to one (or more) of these sectors, but I'd also love to make software or games that people love",
 };
 const worktimeline = [
     {
-      jobtitle: "Lead game developer for Bunny's Paradise unity game",
-      where: "Mediacollege Amsterdam",
-      date: "2025-2026",
+        jobtitle: "Intern XR-Labs",
+        where: "XR-Labs",
+        date: "Sep-2026-Feb-2026",
+    },
+    {
+        jobtitle: "Intern Media College Amsterdam",
+        where: "Mediacollege Amsterdam",
+        date: "Feb-2026-July-2026",
+    },
+    {
+        jobtitle: "Lead game developer for Bunny's Paradise unity game",
+        where: "Mediacollege Amsterdam",
+        date: "2025-2026",
     },
     {
         jobtitle: "Lead Game developer gamejam 'Old vs Young'",
@@ -59,16 +71,19 @@ const skills = [
         description: "my Main coding language, I use this for Unity/Game development mainly.",
     },
     {
+        title: "C++",
+        description: "IntMotor (My custom made 3D voxel game engine), " +
+            "CaptureTheSignals (My 2D SDL 3 game and im still currently developing) while currently both are private projects. " +
+            "Once they're ready for release I will openSource them.",
+    },
+    {
         title: "Java",
-        description: "my second coding language that i know the most of, I mainly use this for minecraft modding, or Web application building.",
+        description: "my second coding language that i know the most of, I mainly use this for minecraft modding, or Web application building. " +
+            "Also got a cool Pokemon Console game which was the first project I felt proud enough to put the Repo on public",
     },
     {
         title: "SQL",
         description: "I have allot of experience making company scale databases.",
-    },
-    {
-        title: "php",
-        description: "While i have experience working with php. I can't say I entirely enjoy working with it.",
     },
     {
         title: "React",
@@ -78,6 +93,9 @@ const skills = [
         title: "javascript",
         description: "My main coding language for Web development, this website is also made with Javascript mainly alongside react."
     },
+    {
+        title: "TypeScript",
+        description: "I have experience working with TypeScript, And I use it the most during web development."},
     {
         title: "Unity",
         description: "my go to Engine to make games with."
@@ -95,13 +113,14 @@ const services = [
     },
     {
         title: "Web development",
-        description: "I worked on a webapp during my college on scalda, Utilising Mysql, Java, Struts2 framework. and more",
+        description: "I worked on a webapp during my college on scalda, Utilising Mysql, Java, Struts2 framework. and more." +
+            "Ontop of all that, I have been teaching myself much more advanced stuff using React, Javascript, TypeScript.",
     },
 ];
 
 const dataportfolio = [{
     img: "https://i.pinimg.com/474x/3a/63/54/3a63544cab1e6926dcb7f02c384be94d.jpg",
-    description: "A game slice of Hollow Knight, developed using Unity, C# and my team.",
+    description: "A game slice of Hollow Knight, developed using Unity, C# and my team. I primarily Worked on the Movement and evironmental hazzrds.",
     link: "https://github.com/Interis-mk/Game-Sclice",
 },
     {
